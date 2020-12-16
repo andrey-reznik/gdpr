@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gdpr.id = 'gdpr-message'
         gdpr.style.display = 'none'
         const gdprText = document.createElement('p')
-        gdprText.innerText = 'Мы применяем cookie для наилучшего представления нашего сайта.' +
-            'Продолжая использовать сайт, вы подтверждаете свое согласие на использование cookie.'
+        gdprText.innerText = 'Мы применяем cookie для наилучшего представления нашего сайта. Продолжая использовать сайт, вы подтверждаете свое согласие на использование cookie.'
         const gdprButton = document.createElement('button')
         gdprButton.id = 'gdpr-accept'
         gdprButton.innerText = 'ОК'
