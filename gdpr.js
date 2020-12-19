@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function createStyles() {
-        const css = ".gdpr{position:absolute;bottom:10px;right:10px;background-color:#483d8b;color:#fff;width:300px;padding:10px;border-radius:5px;box-sizing:border-box;font-family:Calibri,Candara,Segoe,'Segoe UI',Optima,Arial,sans-serif;font-style:normal;font-variant:normal;font-size:14px;display:flex;flex-direction:column}.gdpr p{margin:0;padding:0}.gdpr button{background-color:#1eace1;border-radius:5px;border:none;padding:3px 8px;cursor:pointer;font-family:Calibri,Candara,Segoe,'Segoe UI',Optima,Arial,sans-serif;font-style:normal;font-variant:normal;font-size:14px;color:#fff;margin-left:auto}"
+        const css = ".gdpr{position:fixed;z-index:100;bottom:150px;right:10px;background-color:#483d8b;color:#fff;width:300px;padding:10px;border-radius:5px;box-sizing:border-box;font-family:Calibri,Candara,Segoe,'Segoe UI',Optima,Arial,sans-serif;font-style:normal;font-variant:normal;font-size:14px;display:flex;flex-direction:column}.gdpr p{margin:0;padding:0}.gdpr button{background-color:#1eace1;border-radius:5px;border:none;padding:3px 8px;cursor:pointer;font-family:Calibri,Candara,Segoe,'Segoe UI',Optima,Arial,sans-serif;font-style:normal;font-variant:normal;font-size:14px;color:#fff;margin-left:auto}"
         const head = document.head || document.getElementsByTagName('head')[0]
         const style = document.createElement('style')
         style.type = 'text/css'
