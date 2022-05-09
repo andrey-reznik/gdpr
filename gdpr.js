@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    if (getCookie('gdpr-accepted') !== 'true') {
+    if (getCookie('gdpr-b308c99f-accepted') !== 'true') {
         createStyles()
         createHTML()
         const gdprMessage = document.getElementById('gdpr-message')
         gdprMessage.style.display = 'flex'
         const gdprButton = document.getElementById('gdpr-accept')
         gdprButton.addEventListener('click', function (event) {
-            document.cookie = 'gdpr-5e737a5a-accepted=true;secure;samesite=strict;'
+            document.cookie = 'gdpr-b308c99f-accepted=true;secure;samesite=strict;'
             gdprMessage.style.display = 'none'
         })
     }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gdpr.id = 'gdpr-message'
         gdpr.style.display = 'none'
         const gdprText = document.createElement('p')
-        gdprText.innerHTML = 'Продолжая использовать сайт, вы подтверждаете свое согласие на использование cookie. Для корректного отображения сайта рекомендуется очистить cookie на <a href="chrome://settings/siteData?searchSubpage=gamesforfarm.com">странице</a>'
+        gdprText.innerHTML = 'Продолжая использовать сайт, вы подтверждаете свое согласие на использование cookie. Для корректного отображения сайта рекомендуется очистить cookie на странице <a href="chrome://settings/siteData?searchSubpage=gamesforfarm.com">chrome://settings/siteData?searchSubpage=gamesforfarm.com</a>'
         const gdprButton = document.createElement('button')
         gdprButton.id = 'gdpr-accept'
         gdprButton.innerText = 'ОК'
